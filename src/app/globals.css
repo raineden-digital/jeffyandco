@@ -67,7 +67,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    background-position: 10% 180% !important;
+    background-position: 10% 190% !important;
     background-size: 210% !important;
   }
 }
