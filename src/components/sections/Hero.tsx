@@ -109,21 +109,7 @@ className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3"
         </motion.div>
       </motion.div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 md:translate-y-[20%] z-20"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="text-[#d5aa59]/50 text-xs uppercase tracking-[0.2em]"
-        >
-          ↓ Scroll
-        </motion.div>
-      </motion.div>
+
     </section>
   );
 }
