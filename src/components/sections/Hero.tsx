@@ -108,6 +108,20 @@ className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3"
             Our Story
           </Button>
         </motion.div>
+
+        {/* Mobile Feature Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="md:hidden mt-6"
+        >
+          <img
+            src="/assets/website-images/mobile-feature.png"
+            alt="Mobile Feature"
+            className="mx-auto max-w-xs h-auto"
+          />
+        </motion.div>
       </motion.div>
 
 

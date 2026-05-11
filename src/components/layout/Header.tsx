@@ -31,7 +31,7 @@ export function Header() {
     >
       <Container>
         <div className="flex items-start justify-between pt-8 px-2">
-          <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <a href="/" className="hidden md:flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Logo variant="transparent" size="md" />
             <span className="hidden sm:block text-label text-[#d5aa59]">Jeffy & Co</span>
           </a>
@@ -46,7 +46,7 @@ className="text-lg uppercase tracking-[0.12em] font-semibold text-white hover:te
             ))}
           </nav>
 
-          <button className="text-white/50 hover:text-white md:hidden">
+          <button className="text-white/50 hover:text-white md:hidden order-first ml-4">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
