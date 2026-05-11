@@ -10,7 +10,7 @@ body {
 
 /* Luxury Design Utilities */
 .text-display {
-@apply font-serif text-5xl md:text-6xl font-light tracking-[0.12em] uppercase;
+@apply font-serif text-4xl md:text-6xl font-light tracking-[0.15em] uppercase;
 }
 
 .text-headline {
@@ -60,4 +60,14 @@ body {
 
 .animate-slide-up {
   animation: slide-up 0.6s ease-out;
+}
+.hero-section {
+  background-position: -1% -15%;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: 15% 55% !important;
+    background-size: 170% !important;
+  }
 }

@@ -28,11 +28,10 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center px-6 py-6 overflow-hidden"
+      className="hero-section relative min-h-screen flex items-center justify-center px-6 py-6 overflow-hidden"
       style={{
         backgroundImage: 'url("/assets/Website%20Images/Hero%201.png")',
         backgroundSize: '120%',
-        backgroundPosition: '-1% -20%',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -68,7 +67,7 @@ className="relative z-10 text-center max-w-3xl"      >
   initial={{ opacity: 0, scale: 0.9 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.9, delay: 0.2 }}
-className="mx-auto -mt-8 mb-1 h-44 w-44 sm:h-56 sm:w-56 md:h-[340px] md:w-[340px]">
+className="mx-auto -mt-5 mb-1 h-44 w-44 sm:h-56 sm:w-56 md:h-[340px] md:w-[340px]">
   <img
     src="/assets/Jeffy & Co - Monogram.png"
     alt="Jeffy & Co Monogram"
@@ -80,7 +79,7 @@ className="mx-auto -mt-8 mb-1 h-44 w-44 sm:h-56 sm:w-56 md:h-[340px] md:w-[340px
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-className="text-display -mt-12 leading-none">
+className="text-display -mt-4 md:-mt-12 leading-none">
   Jeffy & Co.
 </motion.h1>
 
@@ -89,8 +88,7 @@ className="text-display -mt-12 leading-none">
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-className="mt-2 text-base md:text-xl text-zinc-300/90 whitespace-nowrap leading-loose max-w-4xl mx-auto font-light"
->
+className="mt-2 text-sm md:text-xl text-zinc-300/90 leading-relaxed max-w-md md:max-w-4xl mx-auto font-light px-4">
   Fragrance that lingers beyond the moment. Crafted with warmth, elegance, and timeless sophistication.
           <br />
         </motion.p>
@@ -116,7 +114,7 @@ className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 md:translate-y-[20%] z-20"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
