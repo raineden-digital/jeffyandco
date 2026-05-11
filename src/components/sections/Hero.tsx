@@ -28,11 +28,12 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="hero-section relative min-h-screen flex items-center justify-center px-6 py-6 overflow-hidden"
+      className="hero-section relative min-h-screen flex items-center justify-center px-6 pt-6 pb-0 overflow-hidden bg-black"
       style={{
         backgroundImage: 'url("/assets/website-images/hero-1.png")',
         backgroundSize: '120%',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
       }}
     >
       {/* Dark Overlay */}
