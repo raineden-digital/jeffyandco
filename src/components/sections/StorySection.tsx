@@ -53,7 +53,7 @@ export function StorySection() {
           >
             <video
               className="absolute inset-0 h-full w-full object-cover"
-              src="/assets/Website%20Images/Jeffy%20%26%20Co%20-%20Video%201.mp4"
+              src="/assets/website-images/video-1.mp4"
               autoPlay
               muted
               loop

@@ -30,7 +30,7 @@ export function Hero() {
       ref={containerRef}
       className="hero-section relative min-h-screen flex items-center justify-center px-6 py-6 overflow-hidden"
       style={{
-        backgroundImage: 'url("/assets/Website%20Images/Hero%201.png")',
+        backgroundImage: 'url("/assets/website-images/hero-1.png")',
         backgroundSize: '120%',
         backgroundRepeat: 'no-repeat'
       }}
