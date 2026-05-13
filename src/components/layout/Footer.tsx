@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Logo } from '@/components/ui/Logo';
 import { Container } from './Container';
 
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <Logo variant="white" size="md" className="mb-4" />
+            <Logo variant="transparent" size="md" className="mb-4" />
             <p className="text-sm text-zinc-400 leading-relaxed">
               Luxury oil-based fragrances crafted with elegance and timeless sophistication.
             </p>
@@ -20,9 +21,10 @@ export function Footer() {
           <div>
             <h4 className="text-sm uppercase tracking-[0.2em] text-white mb-4 font-medium">Collection</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">All Fragrances</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">New Arrivals</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Best Sellers</a></li>
+              <li><Link href="/#collection" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">All Fragrances</Link></li>
+              <li><Link href="/#collection" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">For Him/Her</Link></li>
+              <li><Link href="/#collection" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">For Him</Link></li>
+              <li><Link href="/#collection" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">For Her</Link></li>
             </ul>
           </div>
 
@@ -30,9 +32,9 @@ export function Footer() {
           <div>
             <h4 className="text-sm uppercase tracking-[0.2em] text-white mb-4 font-medium">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Our Story</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Craftsmanship</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Contact</a></li>
+              <li><Link href="/our-story" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Our Story</Link></li>
+              <li><Link href="/#faq" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">FAQs</Link></li>
+              <li><Link href="/#contact" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -40,9 +42,8 @@ export function Footer() {
           <div>
             <h4 className="text-sm uppercase tracking-[0.2em] text-white mb-4 font-medium">Follow</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Instagram</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Twitter</a></li>
-              <li><a href="#" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Pinterest</a></li>
+              <li><a href="https://www.facebook.com/jeffyandco" target="_blank" rel="noreferrer" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Facebook</a></li>
+              <li><a href="https://www.instagram.com/jeffyandco" target="_blank" rel="noreferrer" className="text-sm text-zinc-400 hover:text-[#d5aa59] transition-colors">Instagram</a></li>
             </ul>
           </div>
         </div>

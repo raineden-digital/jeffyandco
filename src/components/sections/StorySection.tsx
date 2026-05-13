@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/Button';
 
 export function StorySection() {
   return (
-    <section className="relative py-20 md:py-32 bg-black border-t border-white/5">
+    <section id="story" className="relative py-20 md:py-32 bg-black border-t border-white/5">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Text Content */}
@@ -37,8 +37,8 @@ export function StorySection() {
             </div>
 
             <div className="mt-10">
-              <Button variant="gold" size="md">
-                Learn More About Us
+              <Button href="/our-story" variant="gold" size="md">
+                Read Our Story
               </Button>
             </div>
           </motion.div>

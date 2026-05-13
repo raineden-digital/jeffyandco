@@ -2,38 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { Container } from '@/components/layout/Container';
+import { Button } from '@/components/ui/Button';
 
 interface Fragrance {
   id: number;
-  name: string;
-  description: string;
-  notes: string[];
+  image: string;
 }
 
 const fragrances: Fragrance[] = [
   {
     id: 1,
-    name: 'Velour',
-    description: 'A rich, warm blend of amber and sandalwood. Intimate and sensual.',
-    notes: ['Amber', 'Sandalwood', 'Musk'],
+    image: '/assets/website-images/feature-card-1.png',
   },
   {
     id: 2,
-    name: 'Nocturne',
-    description: 'Deep woody tones with a hint of jasmine. Perfect for evening wear.',
-    notes: ['Oud', 'Jasmine', 'Cedar'],
+    image: '/assets/website-images/feature-card-2.png',
   },
   {
     id: 3,
-    name: 'Luminescence',
-    description: 'Bright citrus and floral notes. A touch of elegance for any moment.',
-    notes: ['Bergamot', 'Neroli', 'Rose'],
-  },
-  {
-    id: 4,
-    name: 'Reverie',
-    description: 'A dreamy blend of vanilla and patchouli. Timeless and captivating.',
-    notes: ['Vanilla', 'Patchouli', 'Tonka'],
+    image: '/assets/website-images/feature-card-3.png',
   },
 ];
 
@@ -70,7 +57,7 @@ export function CollectionSection() {
           className="text-center mb-16"
         >
           <p className="text-label text-[#d5aa59] mb-4">Collection</p>
-          <h2 className="text-display mb-6">Our Fragrances</h2>
+          <h2 className="text-display mb-6">Featured Fragrances</h2>
           <p className="text-body text-zinc-400 max-w-2xl mx-auto">
             Each fragrance is an olfactory journey. Discover the luxury of our curated collection.
           </p>
@@ -82,47 +69,38 @@ export function CollectionSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {fragrances.map((fragrance) => (
             <motion.div
               key={fragrance.id}
               variants={itemVariants}
-              className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 hover:border-[#d5aa59]/50 transition-all duration-500 cursor-pointer"
+              className="group relative overflow-hidden rounded-lg border border-white/10 bg-white/5 hover:border-[#d5aa59]/50 transition-all duration-500 cursor-pointer"
               whileHover={{ y: -5, borderColor: '#d5aa59' }}
             >
-              {/* Bottle Placeholder */}
-              <div className="h-48 mb-6 flex items-center justify-center bg-gradient-to-b from-[#d5aa59]/5 to-transparent rounded">
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="w-16 h-32 bg-gradient-to-b from-[#d5aa59] to-[#d69b2d] rounded-full opacity-60"
+              <div className="aspect-[4/5] overflow-hidden bg-white/5">
+                <motion.img
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.5 }}
+                  src={fragrance.image}
+                  alt="Featured fragrance"
+                  className="h-full w-full object-cover"
                 />
               </div>
-
-              {/* Content */}
-              <h3 className="text-lg font-light uppercase tracking-[0.15em] text-white mb-3">
-                {fragrance.name}
-              </h3>
-
-              <p className="text-sm text-zinc-400 mb-4 leading-relaxed">
-                {fragrance.description}
-              </p>
-
-              {/* Notes */}
-              <div className="flex flex-wrap gap-2 mb-6">
-                {fragrance.notes.map((note) => (
-                  <span key={note} className="text-xs text-[#d5aa59] border border-[#d5aa59]/30 px-2 py-1 rounded">
-                    {note}
-                  </span>
-                ))}
-              </div>
-
-              {/* CTA */}
-              <button className="text-xs uppercase tracking-[0.2em] text-[#d5aa59] hover:text-white transition-colors duration-300 font-light">
-                Explore →
-              </button>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <Button href="#collection" variant="gold" size="md">
+            Explore Collection
+          </Button>
         </motion.div>
       </Container>
     </section>

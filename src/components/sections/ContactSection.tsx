@@ -2,11 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Container } from '@/components/layout/Container';
-import { Button } from '@/components/ui/Button';
 
 export function ContactSection() {
   return (
-    <section className="py-20 md:py-32 bg-black border-t border-white/5">
+    <section id="contact" className="py-20 md:py-32 bg-black border-t border-white/5">
       <Container size="md">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,11 +16,11 @@ export function ContactSection() {
         >
           <p className="text-label text-[#d5aa59] mb-4">Get In Touch</p>
           
-          <h2 className="text-display mb-6">We'd Love to Hear From You</h2>
+          <h2 className="text-display mb-6">We&apos;d Love to Hear From You</h2>
 
           <p className="text-body text-zinc-400 mb-10 max-w-xl mx-auto">
             Have questions about our fragrances? Want to know more about our story? 
-            Reach out anytime. We're here to help.
+            Reach out anytime. We&apos;re here to help.
           </p>
 
           {/* Contact Options */}
@@ -30,7 +29,7 @@ export function ContactSection() {
               {
                 icon: '✉',
                 title: 'Email',
-                detail: 'hello@jeffyandco.com',
+                detail: 'jeffyandco.ph@gmail.com',
               },
               {
                 icon: '📱',
@@ -40,7 +39,7 @@ export function ContactSection() {
               {
                 icon: '📍',
                 title: 'Location',
-                detail: 'Global Shipping',
+                detail: 'Cebu, Philippines',
               },
             ].map((contact, index) => (
               <motion.div
@@ -60,33 +59,6 @@ export function ContactSection() {
             ))}
           </div>
 
-          {/* Newsletter Signup */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="bg-white/5 border border-white/10 rounded-lg p-8"
-          >
-            <h3 className="text-lg font-light uppercase tracking-[0.15em] text-white mb-4">
-              Subscribe to Our Newsletter
-            </h3>
-
-            <p className="text-zinc-400 text-sm mb-6">
-              Be the first to discover new fragrances and exclusive offers.
-            </p>
-
-            <form className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-grow px-4 py-3 bg-black/50 border border-white/20 text-white placeholder-zinc-600 text-sm focus:outline-none focus:border-[#d5aa59] transition-colors duration-300"
-              />
-              <Button variant="gold" size="md" className="whitespace-nowrap">
-                Subscribe
-              </Button>
-            </form>
-          </motion.div>
         </motion.div>
       </Container>
     </section>

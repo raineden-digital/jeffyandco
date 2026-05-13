@@ -100,11 +100,11 @@ className="mt-2 text-sm md:text-xl text-zinc-300/90 leading-relaxed max-w-md md:
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
 className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-3"
->          <Button variant="gold" size="md">
+>          <Button href="#collection" variant="gold" size="md">
             Explore Collection
           </Button>
 
-          <Button variant="outline" size="md">
+          <Button href="/our-story" variant="outline" size="md">
             Our Story
           </Button>
         </motion.div>

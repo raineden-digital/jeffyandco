@@ -53,7 +53,7 @@ export function FAQSection() {
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
-    <section className="py-20 md:py-32 bg-black border-t border-white/5">
+    <section id="faq" className="py-20 md:py-32 bg-black border-t border-white/5">
       <Container size="md">
         {/* Section Header */}
         <motion.div
