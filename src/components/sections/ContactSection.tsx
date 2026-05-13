@@ -39,7 +39,7 @@ export function ContactSection() {
               {
                 icon: '📍',
                 title: 'Location',
-                detail: 'Cebu, Philippines',
+                detail: 'Philippines',
               },
             ].map((contact, index) => (
               <motion.div
