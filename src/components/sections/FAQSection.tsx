@@ -15,7 +15,7 @@ const faqs: FAQItem[] = [
     id: '1',
     question: 'What makes Jeffy & Co. fragrances different?',
     answer:
-      'Our fragrances are oil-based, which means they last longer on the skin and provide a deeper, more intimate scent experience. We focus on quality over quantity, creating timeless compositions rather than following fleeting trends.',
+      'Our fragrances are 40% oil-based, which means they last longer on the skin and provide a deeper, more intimate scent experience. We focus on quality over quantity, creating timeless compositions rather than following fleeting trends.',
   },
   {
     id: '2',
@@ -43,9 +43,9 @@ const faqs: FAQItem[] = [
   },
   {
     id: '6',
-    question: 'Do you offer international shipping?',
+    question: 'How soon can I receive my order?',
     answer:
-      'Yes, we ship globally. International orders are carefully packaged to ensure your fragrance arrives in perfect condition, with standard shipping times of 7-14 business days.',
+      'Orders are processed within 3-5 business days, then shipped through our partner couriers. Delivery is expected within 7 days after shipment, so the overall timeframe is usually around 7-12 days. We always do our best to speed up the process, but delays may happen due to order volume, courier schedules, or other factors outside our control. We will keep you posted every step of the way.',
   },
 ];
 

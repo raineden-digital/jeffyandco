@@ -77,14 +77,11 @@ export default function OurStoryPage() {
             </div>
           </div>
 
-          <div className="relative h-[520px] md:h-[640px] overflow-hidden rounded-lg border border-white/10 bg-white/5">
-            <video
+          <div className="relative h-[520px] md:h-[640px] overflow-hidden rounded-lg bg-white/5">
+            <img
               className="absolute inset-0 h-full w-full object-cover"
-              src="/assets/website-images/video-1.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
+              src="/assets/website-images/Jeffy.png"
+              alt="Jeffy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
           </div>
