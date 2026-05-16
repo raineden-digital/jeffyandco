@@ -1,6 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
 import { StorySection } from '@/components/sections/StorySection';
 import { CollectionSection } from '@/components/sections/CollectionSection';
+import { InstagramGallerySection } from '@/components/sections/InstagramGallerySection';
 import { FAQSection } from '@/components/sections/FAQSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <CollectionSection />
       <StorySection />
+      <InstagramGallerySection />
       <FAQSection />
       <ContactSection />
     </>
